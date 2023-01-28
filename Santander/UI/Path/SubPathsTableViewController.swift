@@ -718,8 +718,11 @@ class SubPathsTableViewController: UITableViewController, PathTransitioning {
                     }
                     
                     do {
+                        let oldData = try Data(contentsOf: item)
                         let newPath = item.deletingLastPathComponent().appendingPathComponent(name)
-                        try FSOperation.perform(.copyItem(items: [item], resultPath: newPath), rootHelperConf: RootConf.shared)
+                        try FSOperation.perform(.createFile(files: [newPath]), rootHelperConf: RootConf.shared)
+                        try FSOperation.perform(.writeData(url: newPath, data: oldData), rootHelperConf: RootConf.shared)
+                        try FSOperation.perform(.removeItems(items: [item]) , rootHelperConf: RootConf.shared)
                     } catch {
                         self.errorAlert(error, title: "Unable to rename \(item.lastPathComponent)")
                     }

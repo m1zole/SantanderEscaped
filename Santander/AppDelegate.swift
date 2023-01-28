@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             application.shortcutItems = []
         }
+        grant_full_disk_access() { error in
+            print(error?.localizedDescription as Any)
+        }
         
         return true
     }

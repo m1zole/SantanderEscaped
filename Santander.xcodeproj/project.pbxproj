@@ -769,7 +769,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Santander/Other/External/**";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/AnokhinYurii/xcode/Santander/Santander/Santander-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Santander/Santander-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -811,7 +811,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Santander/Other/External/**";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/AnokhinYurii/xcode/Santander/Santander/Santander-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Santander/Santander-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -885,6 +885,16 @@ class PathListViewController: UITableViewController, PathTransitioning {
         }
         menuActions.append(settingsAction)
         
+        let softRespringAction = UIAction(title: "Soft Respring", image: UIImage(systemName: "arrow.clockwise.circle")) { _ in
+            respringFrontboard()
+        }
+        menuActions.append(softRespringAction)
+        
+        let respringAction = UIAction(title: "Respring", image: UIImage(systemName: "arrow.clockwise")) { _ in
+            respringBackboard()
+        }
+        menuActions.append(respringAction)
+        
         let showOrHideHiddenFilesAction = UIAction(
             title: "Display hidden files",
             state: displayHiddenFiles ? .on : .off

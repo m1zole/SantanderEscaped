@@ -51,7 +51,12 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch (indexPath.section, indexPath.row) {
         case (0, 0):
-            return cellWithView(settingsSwitch(forIndexPath: indexPath), text: "Root Helper")
+            let cell = UITableViewCell(style: .value1, reuseIdentifier: nil)
+            var conf = cell.defaultContentConfiguration()
+            conf.text = "Root Helper"
+            conf.secondaryText = "Disabled" // haha no root helper for you
+            cell.contentConfiguration = conf
+            return cell
         case (1, 0):
             // TODO: - For anything that uses a switch, start using accessory views instead
             return cellWithView(settingsSwitch(forIndexPath: indexPath), text: "Large navigation titles")

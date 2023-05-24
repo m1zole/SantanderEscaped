@@ -13,6 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UIApplication.shared.alert(title: "pwning", body: "wait", withButton: false)
+        grant_full_disk_access() { error in
+            UIApplication.shared.dismissAlert(animated: false)
+            UIApplication.shared.alert(title: "pwned", body: error?.localizedDescription ?? "no errors while pwning")
+        }
         if UserPreferences.displayRecentlyBookmarked {
             application.setShortcutItems(intoURLs: UserPreferences.bookmarks)
         } else {

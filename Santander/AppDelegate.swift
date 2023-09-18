@@ -35,10 +35,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        UIApplication.shared.alert(title: "pwning", body: "wait", withButton: false)
+        UIApplication.shared.alert(title: "pwn", body: "kopening...", withButton: true)
         do_kopen(UInt64(puafPages), UInt64(puafMethod), UInt64(kreadMethod), UInt64(kwriteMethod))
+        usleep(1000)
+        UIApplication.shared.alert(title: "pwn", body: "doing fun...", withButton: true)
+        usleep(1000)
         do_fun()
+        UIApplication.shared.alert(title: "pwn", body: "kclosing..", withButton: true)
+        usleep(1000)
         do_kclose()
+        UIApplication.shared.alert(title: "pwn", body: "DONE", withButton: true)
         if UserPreferences.displayRecentlyBookmarked {
             application.setShortcutItems(intoURLs: UserPreferences.bookmarks)
         } else {

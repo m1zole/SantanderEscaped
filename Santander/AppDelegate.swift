@@ -7,17 +7,38 @@
 	
 
 import UIKit
+import SwiftUI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    @State private var kfd: UInt64 = 0
+    
+    @State private var puafPages = 2048
+    @State private var puafMethod = 1
+    @State private var kreadMethod = 1
+    @State private var kwriteMethod = 1
+
+    @State private var enableHideHomebar = false
+    @State private var enableHideDock = false
+    @State private var enableResSet = false
+    @State private var enableReplacecert = true
+    @State private var enableCustomSysColors = false
+    @State private var changeRegion = false
+    @State private var whitelist = false
+    @State private var supervise = false
+    @State private var enableCustomFont = false
+    
+    var puafPagesOptions = [16, 32, 64, 128, 256, 512, 1024, 2048]
+    var puafMethodOptions = ["physpuppet", "smith"]
+    var kreadMethodOptions = ["kqueue_workloop_ctl", "sem_open"]
+    var kwriteMethodOptions = ["dup", "sem_open"]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         UIApplication.shared.alert(title: "pwning", body: "wait", withButton: false)
-        grant_full_disk_access() { error in
-            UIApplication.shared.dismissAlert(animated: false)
-            UIApplication.shared.alert(title: "pwned", body: error?.localizedDescription ?? "no errors while pwning")
-        }
+        do_kopen(UInt64(puafPages), UInt64(puafMethod), UInt64(kreadMethod), UInt64(kwriteMethod))
+        do_fun()
+        do_kclose()
         if UserPreferences.displayRecentlyBookmarked {
             application.setShortcutItems(intoURLs: UserPreferences.bookmarks)
         } else {

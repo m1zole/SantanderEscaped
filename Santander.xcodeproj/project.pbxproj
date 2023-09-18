@@ -48,9 +48,6 @@
 		37CA828A28AA675B000236D7 /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CA828928AA675B000236D7 /* AppInfoViewController.swift */; };
 		37DE0FA22864902400E5EBBC /* FilePreviewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE0FA12864902400E5EBBC /* FilePreviewDataSource.swift */; };
 		37ECADA728B23ECC00B95733 /* ImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECADA628B23ECB00B95733 /* ImageViewerController.swift */; };
-		6D6413F72A1E169600DCD315 /* helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6413F12A1E169500DCD315 /* helpers.m */; };
-		6D6413F82A1E169600DCD315 /* vm_unaligned_copy_switch_race.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D6413F22A1E169500DCD315 /* vm_unaligned_copy_switch_race.c */; };
-		6D6413F92A1E169600DCD315 /* grant_full_disk_access.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6413F32A1E169600DCD315 /* grant_full_disk_access.m */; };
 		6D6413FB2A1E174A00DCD315 /* Alert++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6413FA2A1E174A00DCD315 /* Alert++.swift */; };
 		CE0D0B002906D6F300D17307 /* GoToItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D0AFF2906D6F300D17307 /* GoToItem.swift */; };
 		CE0E513028D4D03300E9D611 /* AssetCatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0E512F28D4D03300E9D611 /* AssetCatalogViewController.swift */; };
@@ -89,6 +86,17 @@
 		CEF032BD291ED00700B6F768 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF032BA291ED00700B6F768 /* main.swift */; };
 		CEF54FF528C3D4E30078A146 /* FontInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF54FF428C3D4E30078A146 /* FontInformationViewController.swift */; };
 		CEFF556129153B9B002C1B99 /* DiffableDataSourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF556029153B9B002C1B99 /* DiffableDataSourceItem.swift */; };
+		D5C333762AB8234200128735 /* fun.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C333682AB8234200128735 /* fun.m */; };
+		D5C333772AB8234200128735 /* grant_full_disk_access.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C333692AB8234200128735 /* grant_full_disk_access.m */; };
+		D5C333782AB8234200128735 /* helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3336A2AB8234200128735 /* helpers.m */; };
+		D5C333792AB8234200128735 /* utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3336B2AB8234200128735 /* utils.m */; };
+		D5C3337A2AB8234200128735 /* thanks_opa334dev_htrowii.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3336C2AB8234200128735 /* thanks_opa334dev_htrowii.m */; };
+		D5C3337B2AB8234200128735 /* cs_blobs.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3336D2AB8234200128735 /* cs_blobs.m */; };
+		D5C3337C2AB8234200128735 /* krw.c in Sources */ = {isa = PBXBuildFile; fileRef = D5C3336E2AB8234200128735 /* krw.c */; };
+		D5C3337D2AB8234200128735 /* offsets.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3336F2AB8234200128735 /* offsets.m */; };
+		D5C3337E2AB8234200128735 /* vnode.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C333702AB8234200128735 /* vnode.m */; };
+		D5C3337F2AB8234200128735 /* proc.c in Sources */ = {isa = PBXBuildFile; fileRef = D5C333712AB8234200128735 /* proc.c */; };
+		D5C333812AB8235500128735 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C333802AB8235500128735 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -149,12 +157,6 @@
 		37DE0FA12864902400E5EBBC /* FilePreviewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewDataSource.swift; sourceTree = "<group>"; };
 		37ECADA628B23ECB00B95733 /* ImageViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerController.swift; sourceTree = "<group>"; };
 		6D6413EF2A1E165300DCD315 /* SantanderHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SantanderHeader.h; sourceTree = "<group>"; };
-		6D6413F12A1E169500DCD315 /* helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helpers.m; sourceTree = "<group>"; };
-		6D6413F22A1E169500DCD315 /* vm_unaligned_copy_switch_race.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vm_unaligned_copy_switch_race.c; sourceTree = "<group>"; };
-		6D6413F32A1E169600DCD315 /* grant_full_disk_access.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = grant_full_disk_access.m; sourceTree = "<group>"; };
-		6D6413F42A1E169600DCD315 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
-		6D6413F52A1E169600DCD315 /* grant_full_disk_access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grant_full_disk_access.h; sourceTree = "<group>"; };
-		6D6413F62A1E169600DCD315 /* vm_unaligned_copy_switch_race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_unaligned_copy_switch_race.h; sourceTree = "<group>"; };
 		6D6413FA2A1E174A00DCD315 /* Alert++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert++.swift"; sourceTree = "<group>"; };
 		CE0D0AFF2906D6F300D17307 /* GoToItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoToItem.swift; sourceTree = "<group>"; };
 		CE0E512F28D4D03300E9D611 /* AssetCatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCatalogViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
@@ -183,6 +185,44 @@
 		CEF032BA291ED00700B6F768 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CEF54FF428C3D4E30078A146 /* FontInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontInformationViewController.swift; sourceTree = "<group>"; };
 		CEFF556029153B9B002C1B99 /* DiffableDataSourceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceItem.swift; sourceTree = "<group>"; };
+		D5C3334A2AB8234200128735 /* krkw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krkw.h; sourceTree = "<group>"; };
+		D5C3334D2AB8234200128735 /* kread_sem_open.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kread_sem_open.h; sourceTree = "<group>"; };
+		D5C3334E2AB8234200128735 /* kread_kqueue_workloop_ctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kread_kqueue_workloop_ctl.h; sourceTree = "<group>"; };
+		D5C333502AB8234200128735 /* kwrite_sem_open.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kwrite_sem_open.h; sourceTree = "<group>"; };
+		D5C333512AB8234200128735 /* kwrite_dup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kwrite_dup.h; sourceTree = "<group>"; };
+		D5C333532AB8234200128735 /* static_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = static_info.h; sourceTree = "<group>"; };
+		D5C333542AB8234200128735 /* dynamic_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dynamic_info.h; sourceTree = "<group>"; };
+		D5C333552AB8234200128735 /* puaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puaf.h; sourceTree = "<group>"; };
+		D5C333562AB8234200128735 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		D5C333582AB8234200128735 /* smith.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smith.h; sourceTree = "<group>"; };
+		D5C333592AB8234200128735 /* physpuppet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = physpuppet.h; sourceTree = "<group>"; };
+		D5C3335A2AB8234200128735 /* perf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perf.h; sourceTree = "<group>"; };
+		D5C3335B2AB8234200128735 /* info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = info.h; sourceTree = "<group>"; };
+		D5C3335D2AB8234200128735 /* posix_spawn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = posix_spawn.h; sourceTree = "<group>"; };
+		D5C3335E2AB8234200128735 /* th_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = th_state.h; sourceTree = "<group>"; };
+		D5C3335F2AB8234200128735 /* CBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBindings.h; sourceTree = "<group>"; };
+		D5C333612AB8234200128735 /* cs_blobs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cs_blobs.h; sourceTree = "<group>"; };
+		D5C333622AB8234200128735 /* thanks_opa334dev_htrowii.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thanks_opa334dev_htrowii.h; sourceTree = "<group>"; };
+		D5C333632AB8234200128735 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		D5C333642AB8234200128735 /* vnode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vnode.h; sourceTree = "<group>"; };
+		D5C333652AB8234200128735 /* proc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proc.h; sourceTree = "<group>"; };
+		D5C333662AB8234200128735 /* offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = offsets.h; sourceTree = "<group>"; };
+		D5C333672AB8234200128735 /* krw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krw.h; sourceTree = "<group>"; };
+		D5C333682AB8234200128735 /* fun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fun.m; sourceTree = "<group>"; };
+		D5C333692AB8234200128735 /* grant_full_disk_access.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = grant_full_disk_access.m; sourceTree = "<group>"; };
+		D5C3336A2AB8234200128735 /* helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helpers.m; sourceTree = "<group>"; };
+		D5C3336B2AB8234200128735 /* utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = utils.m; sourceTree = "<group>"; };
+		D5C3336C2AB8234200128735 /* thanks_opa334dev_htrowii.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thanks_opa334dev_htrowii.m; sourceTree = "<group>"; };
+		D5C3336D2AB8234200128735 /* cs_blobs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cs_blobs.m; sourceTree = "<group>"; };
+		D5C3336E2AB8234200128735 /* krw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = krw.c; sourceTree = "<group>"; };
+		D5C3336F2AB8234200128735 /* offsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = offsets.m; sourceTree = "<group>"; };
+		D5C333702AB8234200128735 /* vnode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vnode.m; sourceTree = "<group>"; };
+		D5C333712AB8234200128735 /* proc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = proc.c; sourceTree = "<group>"; };
+		D5C333722AB8234200128735 /* fun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fun.h; sourceTree = "<group>"; };
+		D5C333732AB8234200128735 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
+		D5C333742AB8234200128735 /* grant_full_disk_access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grant_full_disk_access.h; sourceTree = "<group>"; };
+		D5C333752AB8234200128735 /* libkfd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libkfd.h; sourceTree = "<group>"; };
+		D5C333802AB8235500128735 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +251,7 @@
 				CEE9B2DC29C4592700D6C826 /* NSTask in Frameworks */,
 				CE2D13DA291D8F210023F16D /* FSOperations in Frameworks */,
 				CEE06A37291E1E0A00DA8C75 /* CompressionWrapper in Frameworks */,
+				D5C333812AB8235500128735 /* IOKit.framework in Frameworks */,
 				CEE9B2D829C4590E00D6C826 /* ApplicationsWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,8 +302,8 @@
 		3771D3782862328400E200B6 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				D5C333482AB8234200128735 /* kfd */,
 				6D6413FA2A1E174A00DCD315 /* Alert++.swift */,
-				6D6413F02A1E168600DCD315 /* Exploit */,
 				CEB0566228F156F500B71017 /* BaseLayoutAnchorSupporting.swift */,
 				3771D37A2862329D00E200B6 /* Extensions.swift */,
 				CE0D0AFF2906D6F300D17307 /* GoToItem.swift */,
@@ -374,19 +415,6 @@
 			path = Path;
 			sourceTree = "<group>";
 		};
-		6D6413F02A1E168600DCD315 /* Exploit */ = {
-			isa = PBXGroup;
-			children = (
-				6D6413F52A1E169600DCD315 /* grant_full_disk_access.h */,
-				6D6413F32A1E169600DCD315 /* grant_full_disk_access.m */,
-				6D6413F42A1E169600DCD315 /* helpers.h */,
-				6D6413F12A1E169500DCD315 /* helpers.m */,
-				6D6413F22A1E169500DCD315 /* vm_unaligned_copy_switch_race.c */,
-				6D6413F62A1E169600DCD315 /* vm_unaligned_copy_switch_race.h */,
-			);
-			path = Exploit;
-			sourceTree = "<group>";
-		};
 		CE76B0BD28D74EE900415675 /* AssetCatalog */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +432,7 @@
 		CE7E02DD290006C70046A7D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5C333802AB8235500128735 /* IOKit.framework */,
 				CE7E02DF290006C70046A7D4 /* CoreServices.framework */,
 				CEE9B2D929C4591B00D6C826 /* CoreServices.framework */,
 				CE7E02DE290006C70046A7D4 /* MobileCoreServices.framework */,
@@ -428,6 +457,114 @@
 				CEF54FF428C3D4E30078A146 /* FontInformationViewController.swift */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		D5C333482AB8234200128735 /* kfd */ = {
+			isa = PBXGroup;
+			children = (
+				D5C333492AB8234200128735 /* libkfd */,
+				D5C3335C2AB8234200128735 /* CBindings */,
+				D5C333602AB8234200128735 /* fun */,
+				D5C333752AB8234200128735 /* libkfd.h */,
+			);
+			path = kfd;
+			sourceTree = "<group>";
+		};
+		D5C333492AB8234200128735 /* libkfd */ = {
+			isa = PBXGroup;
+			children = (
+				D5C3334A2AB8234200128735 /* krkw.h */,
+				D5C3334B2AB8234200128735 /* krkw */,
+				D5C333522AB8234200128735 /* info */,
+				D5C333552AB8234200128735 /* puaf.h */,
+				D5C333562AB8234200128735 /* common.h */,
+				D5C333572AB8234200128735 /* puaf */,
+				D5C3335A2AB8234200128735 /* perf.h */,
+				D5C3335B2AB8234200128735 /* info.h */,
+			);
+			path = libkfd;
+			sourceTree = "<group>";
+		};
+		D5C3334B2AB8234200128735 /* krkw */ = {
+			isa = PBXGroup;
+			children = (
+				D5C3334C2AB8234200128735 /* kread */,
+				D5C3334F2AB8234200128735 /* kwrite */,
+			);
+			path = krkw;
+			sourceTree = "<group>";
+		};
+		D5C3334C2AB8234200128735 /* kread */ = {
+			isa = PBXGroup;
+			children = (
+				D5C3334D2AB8234200128735 /* kread_sem_open.h */,
+				D5C3334E2AB8234200128735 /* kread_kqueue_workloop_ctl.h */,
+			);
+			path = kread;
+			sourceTree = "<group>";
+		};
+		D5C3334F2AB8234200128735 /* kwrite */ = {
+			isa = PBXGroup;
+			children = (
+				D5C333502AB8234200128735 /* kwrite_sem_open.h */,
+				D5C333512AB8234200128735 /* kwrite_dup.h */,
+			);
+			path = kwrite;
+			sourceTree = "<group>";
+		};
+		D5C333522AB8234200128735 /* info */ = {
+			isa = PBXGroup;
+			children = (
+				D5C333532AB8234200128735 /* static_info.h */,
+				D5C333542AB8234200128735 /* dynamic_info.h */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		D5C333572AB8234200128735 /* puaf */ = {
+			isa = PBXGroup;
+			children = (
+				D5C333582AB8234200128735 /* smith.h */,
+				D5C333592AB8234200128735 /* physpuppet.h */,
+			);
+			path = puaf;
+			sourceTree = "<group>";
+		};
+		D5C3335C2AB8234200128735 /* CBindings */ = {
+			isa = PBXGroup;
+			children = (
+				D5C3335D2AB8234200128735 /* posix_spawn.h */,
+				D5C3335E2AB8234200128735 /* th_state.h */,
+				D5C3335F2AB8234200128735 /* CBindings.h */,
+			);
+			path = CBindings;
+			sourceTree = "<group>";
+		};
+		D5C333602AB8234200128735 /* fun */ = {
+			isa = PBXGroup;
+			children = (
+				D5C333612AB8234200128735 /* cs_blobs.h */,
+				D5C333622AB8234200128735 /* thanks_opa334dev_htrowii.h */,
+				D5C333632AB8234200128735 /* utils.h */,
+				D5C333642AB8234200128735 /* vnode.h */,
+				D5C333652AB8234200128735 /* proc.h */,
+				D5C333662AB8234200128735 /* offsets.h */,
+				D5C333672AB8234200128735 /* krw.h */,
+				D5C333682AB8234200128735 /* fun.m */,
+				D5C333692AB8234200128735 /* grant_full_disk_access.m */,
+				D5C3336A2AB8234200128735 /* helpers.m */,
+				D5C3336B2AB8234200128735 /* utils.m */,
+				D5C3336C2AB8234200128735 /* thanks_opa334dev_htrowii.m */,
+				D5C3336D2AB8234200128735 /* cs_blobs.m */,
+				D5C3336E2AB8234200128735 /* krw.c */,
+				D5C3336F2AB8234200128735 /* offsets.m */,
+				D5C333702AB8234200128735 /* vnode.m */,
+				D5C333712AB8234200128735 /* proc.c */,
+				D5C333722AB8234200128735 /* fun.h */,
+				D5C333732AB8234200128735 /* helpers.h */,
+				D5C333742AB8234200128735 /* grant_full_disk_access.h */,
+			);
+			path = fun;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -550,10 +687,14 @@
 				37C6E0CE28665B2A00BDDA16 /* PathOperationViewController.swift in Sources */,
 				3771D37B2862329D00E200B6 /* Extensions.swift in Sources */,
 				3787DB0C28ACE5E200ACA60B /* SerializedItemType.swift in Sources */,
+				D5C333762AB8234200128735 /* fun.m in Sources */,
+				D5C3337E2AB8234200128735 /* vnode.m in Sources */,
 				CE7228ED28E8188D00918C5F /* AssetCatalogRenditionViewController.swift in Sources */,
 				CE42E24C291A920400187333 /* LoadingValueState.swift in Sources */,
+				D5C333792AB8234200128735 /* utils.m in Sources */,
 				374ECDCA2875F5350066E9DD /* AudioPlayerViewController.swift in Sources */,
 				37C6E0C52865CF7C00BDDA16 /* SettingsTableViewController.swift in Sources */,
+				D5C3337A2AB8234200128735 /* thanks_opa334dev_htrowii.m in Sources */,
 				37C6E0CA28662C6800BDDA16 /* PathsSortMethods.swift in Sources */,
 				6D6413FB2A1E174A00DCD315 /* Alert++.swift in Sources */,
 				37934DB728707F4500D1248A /* TextFileEditorViewController.swift in Sources */,
@@ -562,8 +703,8 @@
 				375CF89F289D969A00BB7C60 /* PathPermissionsViewController.swift in Sources */,
 				3787DB0528ABECF200ACA60B /* FileEditorType.swift in Sources */,
 				3713292528B60163009E4AEA /* ImageMetadata.swift in Sources */,
-				6D6413F72A1E169600DCD315 /* helpers.m in Sources */,
 				CEB0566328F156F500B71017 /* BaseLayoutAnchorSupporting.swift in Sources */,
+				D5C333782AB8234200128735 /* helpers.m in Sources */,
 				37C6E0C828662C4100BDDA16 /* DragAndDrop.swift in Sources */,
 				37932F052863205F00BF48C8 /* UserPreferences.swift in Sources */,
 				37177E4C289F12640025042E /* PathGroupOwnerViewController.swift in Sources */,
@@ -571,6 +712,8 @@
 				37963F132869C96C00C4B72A /* PathType.swift in Sources */,
 				CECB3A0C28E330BC00328434 /* AssetCatalogDetailsView.swift in Sources */,
 				CECF6EDA28C37F660080B805 /* FontViewerController.swift in Sources */,
+				D5C3337B2AB8234200128735 /* cs_blobs.m in Sources */,
+				D5C3337F2AB8234200128735 /* proc.c in Sources */,
 				374ECDC82875A3940066E9DD /* Storage.swift in Sources */,
 				3789B5F428622E0D00058688 /* PathListViewController.swift in Sources */,
 				3789B5E028622B7A00058688 /* AppDelegate.swift in Sources */,
@@ -583,15 +726,16 @@
 				CEFF556129153B9B002C1B99 /* DiffableDataSourceItem.swift in Sources */,
 				CE99BC6829951DE0008E31DA /* KeyboardSearchView.swift in Sources */,
 				37963F17286A0F0B00C4B72A /* DirectoryMonitor.swift in Sources */,
+				D5C3337C2AB8234200128735 /* krw.c in Sources */,
 				CE37904A28DB523500124029 /* AssetCatalogSectionHeader.swift in Sources */,
-				6D6413F82A1E169600DCD315 /* vm_unaligned_copy_switch_race.c in Sources */,
 				CE5DFE8328C7BC89003E1095 /* BinaryExecutionViewController.swift in Sources */,
+				D5C3337D2AB8234200128735 /* offsets.m in Sources */,
 				CEF54FF528C3D4E30078A146 /* FontInformationViewController.swift in Sources */,
 				375CF897289C394E00BB7C60 /* ToolbarItems.swift in Sources */,
 				37C6E0D22867653A00BDDA16 /* PathSidebarListViewController.swift in Sources */,
 				3787DB0728ACB74D00ACA60B /* SerializedDocumentViewController.swift in Sources */,
 				3787DB0A28ACE4EE00ACA60B /* SerializedItemViewController.swift in Sources */,
-				6D6413F92A1E169600DCD315 /* grant_full_disk_access.m in Sources */,
+				D5C333772AB8234200128735 /* grant_full_disk_access.m in Sources */,
 				37198B9C28721275000C8CDF /* Themes.swift in Sources */,
 				37C6E0D028673AFF00BDDA16 /* Search.swift in Sources */,
 				375CF89D289CF3A600BB7C60 /* Permissions.swift in Sources */,

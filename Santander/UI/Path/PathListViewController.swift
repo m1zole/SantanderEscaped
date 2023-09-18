@@ -886,12 +886,12 @@ class PathListViewController: UITableViewController, PathTransitioning {
         menuActions.append(settingsAction)
         
         let softRespringAction = UIAction(title: "Soft Respring", image: UIImage(systemName: "arrow.clockwise.circle")) { _ in
-            respringFrontboard()
+            restartFrontboard()
         }
         menuActions.append(softRespringAction)
         
         let respringAction = UIAction(title: "Respring", image: UIImage(systemName: "arrow.clockwise")) { _ in
-            respringBackboard()
+            restartBackboard()
         }
         menuActions.append(respringAction)
         

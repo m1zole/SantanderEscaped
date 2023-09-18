@@ -326,23 +326,14 @@ NSDictionary *changeDictValue(NSDictionary *dictionary, NSString *key, id value)
 
 uint64_t mountmobileDir(void) {
     
-    printf("[i] chown /var/mobile\n");
-    funVnodeChownFolder("/var/mobile", 501, 501);
-    
-    printf("[i] mounting /var/mobile\n");
-    
     NSString *mntPath = [NSString stringWithFormat:@"%@%@", NSHomeDirectory(), @"/Documents/mounted"];
     
-    uint64_t libexec_vnode = getVnodeAtPathByChdir("/var/mobile");
-    printf("[i] /var/mobile vnode: 0x%llx\n", libexec_vnode);
+    uint64_t var_mobile_vnode = getVnodeVarMobile();
     
-    uint64_t orig_to_v_data = createFolderAndRedirect(libexec_vnode, mntPath);
+    uint64_t orig_to_v_data = createFolderAndRedirect(var_mobile_vnode, mntPath);
     
-    NSArray* dirs = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:mntPath error:NULL];
-    NSLog(@"/usr/libexec directory list:\n %@", dirs);
+    //UnRedirectAndRemoveFolder(orig_to_v_data, mntPath);
     
-    UnRedirectAndRemoveFolder(orig_to_v_data, mntPath);
-
     return 0;
 }
 
@@ -363,15 +354,14 @@ void do_fun(void) {
     
     funUcred(selfProc);
     funProc(selfProc);
-    printf("[i] pid: %d\n", getpid());
-    funCSFlags("launchd");
-    printf("[i] pid: %d\n", getpid());
+    //funCSFlags("launchd");
     //funTask("kfd");
     mach_port_t host_self = mach_host_self();
     printf("[i] mach_host_self: 0x%x\n", host_self);
     fun_ipc_entry_lookup(host_self);
-    
-    mountmobileDir();
-    
+    usleep(1000);
+    funVnodeChownFolder("/private/var", 501, 501);
+    funVnodeChownFolder("/private/var/mobile", 501, 501);
+    funVnodeChownFolder("/private/var/tmp", 501, 501);
 }
 @end

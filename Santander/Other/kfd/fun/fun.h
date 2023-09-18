@@ -21,5 +21,6 @@ int funUcred(uint64_t proc);
 int funCSFlags(char* process);
 int funTask(char* process);
 uint64_t fun_ipc_entry_lookup(mach_port_name_t port_name);
+uint64_t mountmobileDir(void);
 
 #endif /* fun_h */

@@ -11,9 +11,31 @@ import QuickLook
 import UniformTypeIdentifiers
 import ApplicationsWrapper
 import CompressionWrapper
+import SwiftUI
 
 /// A table view controller showing the subpaths under a Directory, or a group
 class PathListViewController: UITableViewController, PathTransitioning {
+    @State private var kfd: UInt64 = 0
+    
+    @State private var puafPages = 2048
+    @State private var puafMethod = 1
+    @State private var kreadMethod = 1
+    @State private var kwriteMethod = 1
+
+    @State private var enableHideHomebar = false
+    @State private var enableHideDock = false
+    @State private var enableResSet = false
+    @State private var enableReplacecert = true
+    @State private var enableCustomSysColors = false
+    @State private var changeRegion = false
+    @State private var whitelist = false
+    @State private var supervise = false
+    @State private var enableCustomFont = false
+    
+    var puafPagesOptions = [16, 32, 64, 128, 256, 512, 1024, 2048]
+    var puafMethodOptions = ["physpuppet", "smith"]
+    var kreadMethodOptions = ["kqueue_workloop_ctl", "sem_open"]
+    var kwriteMethodOptions = ["dup", "sem_open"]
     
     /// The contents of the path, unfiltered
     var unfilteredContents: [Path]
@@ -894,6 +916,17 @@ class PathListViewController: UITableViewController, PathTransitioning {
             restartBackboard()
         }
         menuActions.append(respringAction)
+        
+        let mountAction = UIAction(title: "mount", image: UIImage(systemName: "compass.drawing")) { _ in
+            self.kfd = do_kopen(UInt64(self.puafPages), UInt64(self.puafMethod), UInt64(self.kreadMethod), UInt64(self.kwriteMethod))
+            if(self.kfd == 0) {
+                usleep(1000)
+                mountmobileDir()
+            }
+            usleep(1000)
+            do_kclose()
+        }
+        menuActions.append(mountAction)
         
         let showOrHideHiddenFilesAction = UIAction(
             title: "Display hidden files",
